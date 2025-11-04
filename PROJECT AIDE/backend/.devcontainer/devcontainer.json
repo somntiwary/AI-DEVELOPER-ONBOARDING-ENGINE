@@ -1,0 +1,23 @@
+{
+  "name": "DevContainer",
+  "workspaceFolder": "/workspace",
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-azuretools.vscode-docker",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ],
+  "postCreateCommand": "python -V && python -m pip --version && python -m pytest -q",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  }
+}

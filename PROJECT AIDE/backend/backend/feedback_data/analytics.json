@@ -1,0 +1,26 @@
+{
+  "total_feedback": 2,
+  "satisfaction_scores": [
+    5,
+    4
+  ],
+  "common_issues": {
+    "None:None": 2
+  },
+  "agent_performance": {
+    "null": {
+      "total_feedback": 1,
+      "failures": 0,
+      "successes": 1,
+      "avg_rating": 5.0
+    },
+    "null": {
+      "total_feedback": 1,
+      "failures": 0,
+      "successes": 1,
+      "avg_rating": 2.0
+    }
+  },
+  "improvement_areas": [],
+  "last_updated": "2025-10-26T21:54:48.405554"
+}

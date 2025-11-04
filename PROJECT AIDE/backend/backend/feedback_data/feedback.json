@@ -1,0 +1,62 @@
+[
+  {
+    "feedback_id": "cc45a7ca-4899-4181-892f-c51f833a1267",
+    "user_id": "user_123",
+    "session_id": "session_456",
+    "timestamp": "2025-10-26T21:44:21.214968",
+    "feedback_type": "satisfaction",
+    "severity": "low",
+    "rating": 5,
+    "title": "Onboarding Satisfaction Survey",
+    "description": "Onboarding completed in 30 minutes. Comments: No",
+    "context": {
+      "onboarding_time_minutes": 30,
+      "agents_used": [],
+      "most_helpful_agent": "",
+      "least_helpful_agent": "",
+      "would_recommend": true,
+      "survey_type": "satisfaction"
+    },
+    "agent_involved": null,
+    "step_failed": null,
+    "suggested_fix": null,
+    "user_experience": null,
+    "tags": [
+      "survey",
+      "satisfaction",
+      "onboarding"
+    ],
+    "resolved": false,
+    "resolution_notes": null
+  },
+  {
+    "feedback_id": "aaea94e5-afae-44c8-9266-2b7d8b886af2",
+    "user_id": "user_123",
+    "session_id": "session_456",
+    "timestamp": "2025-10-26T21:54:48.398867",
+    "feedback_type": "satisfaction",
+    "severity": "low",
+    "rating": 4,
+    "title": "Onboarding Satisfaction Survey",
+    "description": "Onboarding completed in 30 minutes. Comments: Can improve the walkthrough agent",
+    "context": {
+      "onboarding_time_minutes": 30,
+      "agents_used": [],
+      "most_helpful_agent": "",
+      "least_helpful_agent": "",
+      "would_recommend": true,
+      "survey_type": "satisfaction"
+    },
+    "agent_involved": null,
+    "step_failed": null,
+    "suggested_fix": null,
+    "user_experience": null,
+    "tags": [
+      "survey",
+      "satisfaction",
+      "onboarding"
+    ],
+    "resolved": false,
+    "resolution_notes": null
+  }
+]
