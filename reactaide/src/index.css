@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-dark-border;
+  }
+  
+  body {
+    @apply bg-dark-bg text-dark-text;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Dark theme scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-surface;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-border rounded-md;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-600;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-dark-bg disabled:pointer-events-none disabled:opacity-50;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-dark-accent text-dark-text hover:bg-dark-border;
+  }
+  
+  .card {
+    @apply rounded-lg border border-dark-border bg-dark-surface text-dark-text shadow-sm;
+  }
+  
+  .input {
+    @apply flex h-10 w-full rounded-md border border-dark-border bg-dark-surface px-3 py-2 text-sm text-dark-text file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-dark-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-dark-bg disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  
+  /* Dark theme specific components */
+  .dark-card {
+    @apply bg-dark-surface border border-dark-border text-dark-text;
+  }
+  
+  .dark-sidebar {
+    @apply bg-dark-surface border-r border-dark-border;
+  }
+  
+  .dark-header {
+    @apply bg-dark-surface border-b border-dark-border;
+  }
+  
+  .dark-text-primary {
+    @apply text-dark-text;
+  }
+  
+  .dark-text-secondary {
+    @apply text-dark-text-secondary;
+  }
+  
+  /* Dark theme overrides for light backgrounds */
+  .bg-gray-50 {
+    @apply bg-dark-accent;
+  }
+  
+  .bg-blue-50 {
+    @apply bg-blue-900/20 border-blue-800;
+  }
+  
+  .bg-green-50 {
+    @apply bg-green-900/20 border-green-800;
+  }
+  
+  .bg-yellow-50 {
+    @apply bg-yellow-900/20 border-yellow-800;
+  }
+  
+  .bg-red-50 {
+    @apply bg-red-900/20 border-red-800;
+  }
+  
+  .bg-primary-50 {
+    @apply bg-primary-900/20 border-primary-500;
+  }
+  
+  .bg-gray-100 {
+    @apply bg-dark-surface;
+  }
+  
+  /* Dark theme input overrides */
+  .border-gray-300 {
+    @apply border-dark-border;
+  }
+  
+  /* Dark theme text colors */
+  .text-red-800 {
+    @apply text-red-300;
+  }
+  
+  .text-yellow-800 {
+    @apply text-yellow-300;
+  }
+  
+  .text-blue-900 {
+    @apply text-blue-300;
+  }
+  
+  .text-green-800 {
+    @apply text-green-300;
+  }
+  
+  .text-blue-800 {
+    @apply text-blue-300;
+  }
+}
